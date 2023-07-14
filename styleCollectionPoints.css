@@ -1,0 +1,73 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px 160px;
+}
+
+.logo a,
+.register a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.main-container {
+    margin: 58px 160px;
+}
+
+.main-container h2 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: #13131A;
+    margin-bottom: 30px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 6rem;
+}
+
+.card {
+    background-color: #FFF;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.card .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content i {
+    color: green;
+}
+
+.title-case {
+    margin-bottom: 1.2rem;
+    color: #41414D;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.info {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #737380;
+}
+
+.description p {
+    margin-bottom: 0px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+

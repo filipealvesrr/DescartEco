@@ -1,0 +1,50 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px 160px;
+}
+
+.logo a,
+.register a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 740px;
+    background-color: #FFF;
+    padding: 64px 28px;
+    border-radius: 8px;
+}
+
+.wrapper h2 {
+    font-size: 36px;
+    color: #322153;
+    font-weight: 700;
+    margin-bottom: 50px
+}
+
+.wrapper p {
+    font-size: 18px;
+    color: #6C6C80;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.wrapper .images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images img {
+    width: 140px;
+    height: 110px;
+}
