@@ -50,7 +50,7 @@
 }
 
 .wrapper p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     color: #6C6C80;
     max-width: 500px;
@@ -103,6 +103,10 @@ legend h2{
 .field-group select {
     max-width: 292px;
     padding: 18px;
+}
+
+.title-two {
+    margin-top: 40px;
 }
 
 .groups {
