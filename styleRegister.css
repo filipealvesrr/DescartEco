@@ -18,8 +18,78 @@
 }
 
 .wrapper {
-    max-width: 748px;
+    width: 748px;
     background-color: #FFF;
     padding: 64px;
     border-radius: 8px;
 }
+
+.wrapper h1 {
+    font-size: 36px;
+    color: #322153;
+    font-weight: 700;
+    margin-bottom: 8px;
+    max-width: 270px;
+}
+
+.wrapper p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C80;
+    max-width: 500px;
+    margin-bottom: 48px;
+}
+
+legend h2{
+    color: #322153;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    color: #6C6C80;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.field input,
+.field-group select {
+    max-width: 608px;
+    padding: 18px;
+    background-color: #F0F0F5;
+    color: #322153;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 24px
+
+}
+
+.field-group {
+    max-width: 608px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.field-group select {
+    max-width: 292px;
+    padding: 18px;
+}
+
+.button-form {
+    padding: 20px 40px;
+    color: #FFF;
+    background-color: #4996FF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-align: right;
+}
+
