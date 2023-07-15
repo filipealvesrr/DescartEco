@@ -12,6 +12,23 @@
     gap: 16px;
 }
 
+.logo h1 {
+    color: #322153;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.register i {
+    color: #4996FF;
+    font-size: 24px;
+}
+
+.register h3 {
+    color: #322153;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .main-container {
     display: flex;
     justify-content: center;

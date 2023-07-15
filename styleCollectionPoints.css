@@ -12,6 +12,24 @@
     gap: 16px;
 }
 
+.logo h1 {
+    color: #322153;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.register i {
+    color: #4996FF;
+    font-size: 24px;
+}
+
+.register h3 {
+    color: #322153;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
 .main-container {
     margin: 58px 160px;
 }
@@ -19,7 +37,7 @@
 .main-container h2 {
     font-size: 3.6rem;
     font-weight: 500;
-    color: #13131A;
+    color: #322153;
     margin-bottom: 30px;
 }
 .cards {

@@ -12,13 +12,30 @@
     gap: 16px;
 }
 
+.logo h1 {
+    color: #322153;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.register i {
+    color: #4996FF;
+    font-size: 24px;
+}
+
+.register h3 {
+    color: #322153;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .form-container {
     display: flex;
     justify-content: center;
 }
 
 .wrapper {
-    width: 748px;
+    max-width: 748px;
     background-color: #FFF;
     padding: 64px;
     border-radius: 8px;
@@ -38,6 +55,11 @@
     color: #6C6C80;
     max-width: 500px;
     margin-bottom: 48px;
+}
+
+.info-local {
+    display: flex;
+    gap: 20px;
 }
 
 legend h2{
@@ -83,6 +105,21 @@ legend h2{
     padding: 18px;
 }
 
+.groups {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type {
+    margin-bottom: 20px;
+}
+
+.type label {
+    font-size: 18px;
+    color: #322153;
+    margin-left: 8px;
+}
+
 .button-form {
     padding: 20px 40px;
     color: #FFF;
@@ -90,6 +127,7 @@ legend h2{
     font-size: 16px;
     font-weight: 700;
     border-radius: 8px;
-    text-align: right;
+    margin-top: 40px;
+
 }
 
