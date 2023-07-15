@@ -124,7 +124,7 @@ legend h2{
     margin-left: 8px;
 }
 
-.button-form {
+.button-points {
     padding: 20px 40px;
     color: #FFF;
     background-color: #4996FF;
@@ -132,6 +132,32 @@ legend h2{
     font-weight: 700;
     border-radius: 8px;
     margin-top: 40px;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
 
 }
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 
