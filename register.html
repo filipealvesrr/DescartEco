@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styleCollectionPoints.css">
+    <link rel="stylesheet" href="styleRegister.css">
 </head>
 
 <body>
@@ -39,7 +39,48 @@
     </header>
 
     <main class="container">
+        <div class="form-container">
+            <div class="wrapper">
+                <h1>Formulário de cadastro</h1>
+                <p>Preencha corretamente o endereço, ajudando outros e a natureza</p>
+                <form action="" method="GET">
+                    <fieldset>
+                        <legend>
+                            <h2>Dados do ponto de coleta</h2>
+                        </legend>
+                        <div class="field">
+                            <label for="name">Nome do local</label>
+                            <input type="text" name="name" id="">
+                        </div>
 
+                        <div class="field">
+                            <label for="address">Nome do local</label>
+                            <input type="text" name="address" id="">
+                        </div>
+
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="complement">Complemento</label>
+                                <input type="text" name="complement" id="">
+                            </div>
+                            <div class="field">
+                                <label for="city">Cidade do Vale</label>
+                                <select name="city" id="">
+                                    <option value="">Selecione a Cidade</option>
+                                    <option value="Petrolina">Petrolina</option>
+                                    <option value="Juazeiro">Juazeiro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <h2>Ítens recebidos</h2>
+                    </fieldset>
+                    <button type="submit" class="button-form">Cadastrar ponto de coleta</button>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 

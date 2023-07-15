@@ -11,3 +11,15 @@
     align-items: center;
     gap: 16px;
 }
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 748px;
+    background-color: #FFF;
+    padding: 64px;
+    border-radius: 8px;
+}
