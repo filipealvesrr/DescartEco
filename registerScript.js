@@ -10,9 +10,14 @@ buttonLink.addEventListener('click', function(event) {
         text: 'Pesquise seu ponto de coleta em Home',
         icon: 'success',
         confirmButtonText: 'Ok',
+        customClass: {
+            popup: 'sweet-style',
+        }
     }).then((result) => {
         if (result.isConfirmed) {
             // Confirmação recebida, enviar o formulário
+            document.getElementById("myForm").submit();
+        } else {
             document.getElementById("myForm").submit();
         }
     });
