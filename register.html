@@ -16,11 +16,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styleRegister.css">
-    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.min.css" rel="stylesheet">
+
 
 </head>
 
 <body>
+
     <header class="header container">
         <div class="header-container">
             <div class="logo">
@@ -45,7 +47,7 @@
             <div class="wrapper">
                 <h1>Formulário de cadastro</h1>
                 <p>Preencha corretamente o endereço, ajudando outros e a natureza</p>
-                <form action="" method="GET">
+                <form action="index.html" method="GET" id="myForm">
                     <fieldset>
                         <legend>
                             <h2>Dados do ponto de coleta</h2>
@@ -119,7 +121,9 @@
                             </div>
                         </div>
                     </fieldset>
-                    <button type="submit" class="button-points">Cadastrar ponto de coleta</button>
+                    <button type="submit" class="button-points" id="submitBtn">Cadastrar
+                        ponto de
+                        coleta</button>
                 </form>
             </div>
         </div>
@@ -127,13 +131,11 @@
 
     <div class="modal-overlay">
         <div class="modal-content">
-
         </div>
     </div>
 
-    <script src="indexScript.js"></script>
-    <script src="sweetalert2.min.js"></script>
-
+    <script src="registerScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

@@ -132,6 +132,7 @@ legend h2{
     font-weight: 700;
     border-radius: 8px;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 /* === MODAL === */
