@@ -133,8 +133,33 @@
 }
 
 @media (max-width:645px){
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 24px;
+    }
+
+    .register i {
+        font-size: 14px;
+    }
+
+    .register h3 {
+        font-size: 0px;
+        text-align: center;
+    }
+
+    .main-container h2 {
+        font-size: 14px;
+    }
+
+    .content i {
+        font-size: 14px;
+    }
+
     .title-case {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .info {
@@ -150,6 +175,33 @@
 
     .footer-info .links {
         font-size: 12px;
+    }
+
+}
+
+@media (max-width:536px) {
+    .content i {
+        font-size: 10px;
+    }
+
+    .title-case {
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+
+    .info {
+        font-size: 8px;
+        line-height: 12px;
+        margin-bottom: 12px;
+    }
+
+    .footer-info h4 {
+        max-width: 250px;
+        font-size: 10px;
+    }
+
+    .footer-info .links {
+        font-size: 8px;
     }
 }
 
