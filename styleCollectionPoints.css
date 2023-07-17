@@ -133,27 +133,6 @@
 }
 
 @media (max-width:645px){
-    .logo h1 {
-        font-size: 14px;
-    }
-
-    .logo img {
-        width: 24px;
-    }
-
-    .register i {
-        font-size: 14px;
-    }
-
-    .register h3 {
-        font-size: 0px;
-        text-align: center;
-    }
-
-    .main-container h2 {
-        font-size: 14px;
-    }
-
     .content i {
         font-size: 14px;
     }
@@ -180,6 +159,27 @@
 }
 
 @media (max-width:536px) {
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 24px;
+    }
+
+    .register i {
+        font-size: 14px;
+    }
+
+    .register h3 {
+        font-size: 0px;
+        text-align: center;
+    }
+
+    .main-container h2 {
+        font-size: 14px;
+    }
+
     .content i {
         font-size: 10px;
     }
