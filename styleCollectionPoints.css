@@ -159,6 +159,10 @@
 }
 
 @media (max-width:536px) {
+    .card {
+        padding: 1.5rem;
+    }
+
     .logo h1 {
         font-size: 14px;
     }
@@ -204,6 +208,59 @@
         font-size: 8px;
     }
 }
+
+@media (max-width:536px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 20px;
+    }
+
+    .register i {
+        font-size: 12px;
+    }
+
+    .register h3 {
+        font-size: 0px;
+        text-align: center;
+    }
+
+    .main-container h2 {
+        font-size: 8px;
+    }
+
+    .content i {
+        font-size: 10px;
+    }
+
+    .title-case {
+        font-size: 6px;
+        margin-bottom: 5px;
+    }
+
+    .info {
+        font-size: 6px;
+        line-height: 12px;
+        margin-bottom: 12px;
+    }
+
+    .footer-info h4 {
+        max-width: 250px;
+        font-size: 8px;
+    }
+
+    .footer-info .links {
+        font-size: 6px;
+    }
+}
+
+
 
 
 
