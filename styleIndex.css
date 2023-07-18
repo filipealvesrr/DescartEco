@@ -59,23 +59,27 @@
     margin-bottom: 30px;
 }
 
-.button a {
+.title-button {
+    font-size: 24px;
+    color: #322153;
+}
+
+.button form{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 24px;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.button button {
+    flex: 1;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px;
     max-width: 300px;
     border-radius: 8px;
     background-color: #4996FF;
     cursor: pointer;
-
-}
-
-.button a i,
-.button a h4 {
-    font-weight: 700;
-    color: #FFF;
 }
 
 .banner-image {
@@ -85,6 +89,13 @@
 
 .banner-image img {
     width: 720px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .about {
@@ -102,64 +113,15 @@
     font-size: 24px;
     color: #322153;
     margin-left: 24px;
+    transition: all 0.1s;
 }
 
-/* === MODAL === */
-
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-
-}
-
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.modal-content h2 {
-    font-size: 36px;
-    color: #FFF;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.form-search {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-search input,
-.form-search button {
-    width: 420px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.form-search input {
-    font-size: 16px;
-    color: #322153;
-}
-
-.form-search button {
-    font-size: 16px;
-    font-weight: 700;
-    color: #FFF;
-    background-color: #4996FF;
-    cursor: pointer;
-}
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
+.about h3:hover {
+    border-bottom: 3px solid #322153;
 }
 
 /* Responsividade */
+
+@media(max-width: 1130px) {
+    
+}

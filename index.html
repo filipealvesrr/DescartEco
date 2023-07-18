@@ -32,7 +32,7 @@
                 <div class="register">
                     <a href="register.html">
                         <i class="fa-solid fa-right-to-bracket"></i>
-                        <h3>Cadastrar ponto de coleta</h3>
+                        <h3>Cadastrar ponto no Vale</h3>
                     </a>
                 </div>
             </nav>
@@ -49,11 +49,12 @@
                     <div class="description">
                         <p>Ajudamos as pessoas a encontrarem pontos de coleta no Vale de São Francisco.</p>
                     </div>
+                    <h2 class="title-button">Pontos de Coleta</h2>
                     <div class="button">
-                        <a class="button-points">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <h4>Pesquisar pontos de coleta</h4>
-                        </a>
+                        <form action="collectionPoints.html" method="GET">
+                            <button type="submit">Petrolina</button>
+                            <button type="submit">Juazeiro</button>
+                        </form>
                     </div>
                 </section>
                 <section class="banner-image">
@@ -66,20 +67,12 @@
                     <img src="Assets/img/pev-remove.png" alt="">
                     <h3>Quem somos</h3>
                 </a>
+                <a href="knowMore.html" class="about">
+                    <h3>Saiba Mais</h3>
+                </a>
             </footer>
         </div>
     </main>
-
-    <div class="modal-overlay">
-        <div class="modal-content">
-            <h2>Pontos de coleta</h2>
-            <form action="collectionPoints.html" method="GET" class="form-search">
-                <input type="text" placeholder="Digite a cidade">
-                <input type="text" placeholder="Digite o estado">
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-    </div>
 
     <script src="indexScript.js"></script>
 </body>

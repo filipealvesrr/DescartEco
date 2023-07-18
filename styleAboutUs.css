@@ -65,3 +65,50 @@
     width: 140px;
     height: 110px;
 }
+
+/* Responsividade */
+
+@media (max-width: 1050px) {
+    .header-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header-container {
+        margin: 42px 10px;
+    }
+    
+    .wrapper {
+        max-width: 350px;
+    }
+
+    .wrapper h2 {
+        font-size: 28px;
+    }
+
+    .wrapper p {
+        font-size: 14px;
+    }
+
+    .wrapper img {
+        width: 70px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 580px) {    
+    .wrapper {
+        max-width: 300px;
+    }
+
+}
+
+
