@@ -55,22 +55,22 @@
                         </legend>
                         <div class="field">
                             <label for="name">Nome do local</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                         </div>
 
                         <div class="field">
                             <label for="address">Endereço</label>
-                            <input type="text" name="address" id="address">
+                            <input type="text" name="address" id="address" required>
                         </div>
 
                         <div class="field-group">
                             <div class="field">
                                 <label for="complement">Complemento</label>
-                                <input type="text" name="complement" id="complement">
+                                <input type="text" name="complement" id="complement" required>
                             </div>
                             <div class="field">
                                 <label for="city">Cidade do Vale</label>
-                                <select name="city" id="city">
+                                <select name="city" id="city" required>
                                     <option value="">Selecione a Cidade</option>
                                     <option value="Petrolina">Petrolina</option>
                                     <option value="Juazeiro">Juazeiro</option>
@@ -80,11 +80,11 @@
                         <div class="field-group">
                             <div class="field">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="field">
                                 <label for="whats">Whatsapp (99) 99999-9999</label>
-                                <input type="tel" name="whatsapp" id="whats">
+                                <input type="tel" name="whatsapp" id="whats" required>
                             </div>
                         </div>
                     </fieldset>
@@ -96,42 +96,47 @@
                         <div class="groups">
                             <div class="group-one">
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Alumínio (Latas, papel)</label>
+                                    <input type="checkbox" name="itens" id="aluminio" value="Alumínio (Latas, papel)">
+                                    <label for="aluminio">Alumínio (Latas, papel)</label>
                                 </div>
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Lâmpadas fluorescentes</label>
+                                    <input type="checkbox" name="itens" id="lampadas" value="Lâmpadas fluorescentes">
+                                    <label for="lampadas">Lâmpadas fluorescentes</label>
                                 </div>
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Pilhas e baterias</label>
+                                    <input type="checkbox" name="itens" id="pilhas" value="Pilhas e baterias">
+                                    <label for="pilhas">Pilhas e baterias</label>
                                 </div>
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Pneus</label>
+                                    <input type="checkbox" name="itens" id="pneus" value="Pneus">
+                                    <label for="pneus">Pneus</label>
                                 </div>
                             </div>
                             <div class="group-two">
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Produtos eletrônicos</label>
+                                    <input type="checkbox" name="itens" id="eletronicos" value="Produtos eletrônicos">
+                                    <label for="eletronicos">Produtos eletrônicos</label>
                                 </div>
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Óleos lubrificantes</label>
+                                    <input type="checkbox" name="itens" id="lubrificantes" value="Óleos lubrificantes">
+                                    <label for="lubrificantes">Óleos lubrificantes</label>
                                 </div>
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Óleo de cozinha</label>
+                                    <input type="checkbox" name="itens" id="cozinha" value="Óleo de cozinha">
+                                    <label for="cozinha">Óleo de cozinha</label>
                                 </div>
                                 <div class="type">
-                                    <input type="checkbox" name="itens" id="">
-                                    <label for="">Embalagem de agrotóxicos</label>
+                                    <input type="checkbox" name="itens" id="agro" value="Embalagem de agrotóxicos">
+                                    <label for="agro">Embalagem de agrotóxicos</label>
                                 </div>
                             </div>
                         </div>
+
                     </fieldset>
+
+                    <h4>Como se trata de um banco de dados povoado por pessoas, podemos entrar em contato para
+                        confirmar a existência do ponto.</h4>
+
                     <button type="submit" class="button-points" id="submitBtn">Cadastrar
                         ponto de
                         coleta</button>
@@ -145,7 +150,7 @@
         </div>
     </div>
 
-    <script src="registerScript.js"></script>
+    <script src="/scripts/registerScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>

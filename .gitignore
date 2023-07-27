@@ -1,0 +1,54 @@
+# Arquivos e pastas gerais a serem ignorados
+node_modules/
+dist/
+*.log
+
+# Arquivos de configuração de ambiente (ex.: .env)
+.env
+.env.local
+.env.*.local
+
+# Arquivos de dependências específicos para o seu ambiente de desenvolvimento (ex.: .npmrc, .yarnrc)
+.npmrc
+.yarnrc
+
+# Arquivos de build (ex.: build/, dist/, out/)
+build/
+out/
+dist/
+
+# Arquivos de cache e compilação
+*.pid
+*.seed
+*.pid.lock
+*.log
+*.yml
+*.csv
+
+# Arquivos de registro
+logs
+*.log
+
+# Editor/IDE específico
+.idea/
+.vscode/
+
+# Dependências específicas para o seu sistema operacional (ex.: .DS_Store, thumbs.db)
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados pelo sistema
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de cobertura de testes
+coverage/
+.nyc_output/
+
+# Diretório de instalação de npm
+node_modules/
+
+# Diretório de construção para o TypeScript
+dist/

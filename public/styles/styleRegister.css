@@ -124,6 +124,11 @@ legend h2{
     margin-left: 8px;
 }
 
+form h4 {
+  margin-top: 20px;
+  color: #322153;
+}
+
 .button-points {
     padding: 20px 40px;
     color: #FFF;
@@ -234,6 +239,10 @@ legend h2{
       padding: 12px 24px;
       font-size: 12px;
       margin-top: 16px;
+    }
+
+    form h4 {
+      font-size: 12px;
     }
   }
 
