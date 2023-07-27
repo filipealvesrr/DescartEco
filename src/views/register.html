@@ -1,141 +1,128 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
+{% block title %}
     <title>DescartEco | Cadastrar ponto</title>
-    <meta name="description"
-        content="Ajudamos nossos usuários a encontrar pontos de coleta adequados para resíduos que merecem tratamento especial no seu descarte.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Assets/img/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/reset.css">
+{% endblock title %}
+    
+{% block style %}
     <link rel="stylesheet" href="/styles/styleRegister.css">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.min.css" rel="stylesheet">
+{% endblock style %}
 
-
-</head>
-
-<body>
-
+{% block header %}
     {% include "partials/header.html" %}
+{% endblock header %}
 
-    <main class="container">
-        <div class="form-container">
-            <div class="wrapper">
-                <h1>Formulário de cadastro</h1>
-                <p>Preencha corretamente o endereço, ajudando outros e a natureza</p>
-                <form action="index.html" method="GET" id="myForm">
-                    <fieldset>
-                        <legend>
-                            <h2>Dados do ponto de coleta</h2>
-                        </legend>
+{% block content %}
+    <div class="form-container">
+        <div class="wrapper">
+            <h1>Formulário de cadastro</h1>
+            <p>Preencha corretamente o endereço, ajudando outros e a natureza</p>
+            <form action="index.html" method="GET" id="myForm">
+                <fieldset>
+                    <legend>
+                        <h2>Dados do ponto de coleta</h2>
+                    </legend>
+                    <div class="field">
+                        <label for="name">Nome do local</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address" id="address" required>
+                    </div>
+
+                    <div class="field-group">
                         <div class="field">
-                            <label for="name">Nome do local</label>
-                            <input type="text" name="name" id="name" required>
+                            <label for="complement">Complemento</label>
+                            <input type="text" name="complement" id="complement" required>
                         </div>
-
                         <div class="field">
-                            <label for="address">Endereço</label>
-                            <input type="text" name="address" id="address" required>
+                            <label for="city">Cidade do Vale</label>
+                            <select name="city" id="city" required>
+                                <option value="">Selecione a Cidade</option>
+                                <option value="Petrolina">Petrolina</option>
+                                <option value="Juazeiro">Juazeiro</option>
+                            </select>
                         </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="whats">Whatsapp (99) 99999-9999</label>
+                            <input type="tel" name="whatsapp" id="whats" required>
+                        </div>
+                    </div>
+                </fieldset>
 
-                        <div class="field-group">
-                            <div class="field">
-                                <label for="complement">Complemento</label>
-                                <input type="text" name="complement" id="complement" required>
+                <fieldset>
+                    <legend>
+                        <h2 class="title-two">Ítens recebidos</h2>
+                    </legend>
+                    <div class="groups">
+                        <div class="group-one">
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="aluminio" value="Alumínio (Latas, papel)">
+                                <label for="aluminio">Alumínio (Latas, papel)</label>
                             </div>
-                            <div class="field">
-                                <label for="city">Cidade do Vale</label>
-                                <select name="city" id="city" required>
-                                    <option value="">Selecione a Cidade</option>
-                                    <option value="Petrolina">Petrolina</option>
-                                    <option value="Juazeiro">Juazeiro</option>
-                                </select>
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="lampadas" value="Lâmpadas fluorescentes">
+                                <label for="lampadas">Lâmpadas fluorescentes</label>
                             </div>
-                        </div>
-                        <div class="field-group">
-                            <div class="field">
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email" required>
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="pilhas" value="Pilhas e baterias">
+                                <label for="pilhas">Pilhas e baterias</label>
                             </div>
-                            <div class="field">
-                                <label for="whats">Whatsapp (99) 99999-9999</label>
-                                <input type="tel" name="whatsapp" id="whats" required>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>
-                            <h2 class="title-two">Ítens recebidos</h2>
-                        </legend>
-                        <div class="groups">
-                            <div class="group-one">
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="aluminio" value="Alumínio (Latas, papel)">
-                                    <label for="aluminio">Alumínio (Latas, papel)</label>
-                                </div>
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="lampadas" value="Lâmpadas fluorescentes">
-                                    <label for="lampadas">Lâmpadas fluorescentes</label>
-                                </div>
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="pilhas" value="Pilhas e baterias">
-                                    <label for="pilhas">Pilhas e baterias</label>
-                                </div>
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="pneus" value="Pneus">
-                                    <label for="pneus">Pneus</label>
-                                </div>
-                            </div>
-                            <div class="group-two">
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="eletronicos" value="Produtos eletrônicos">
-                                    <label for="eletronicos">Produtos eletrônicos</label>
-                                </div>
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="lubrificantes" value="Óleos lubrificantes">
-                                    <label for="lubrificantes">Óleos lubrificantes</label>
-                                </div>
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="cozinha" value="Óleo de cozinha">
-                                    <label for="cozinha">Óleo de cozinha</label>
-                                </div>
-                                <div class="type">
-                                    <input type="checkbox" name="itens" id="agro" value="Embalagem de agrotóxicos">
-                                    <label for="agro">Embalagem de agrotóxicos</label>
-                                </div>
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="pneus" value="Pneus">
+                                <label for="pneus">Pneus</label>
                             </div>
                         </div>
+                        <div class="group-two">
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="eletronicos" value="Produtos eletrônicos">
+                                <label for="eletronicos">Produtos eletrônicos</label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="lubrificantes" value="Óleos lubrificantes">
+                                <label for="lubrificantes">Óleos lubrificantes</label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="cozinha" value="Óleo de cozinha">
+                                <label for="cozinha">Óleo de cozinha</label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="itens" id="agro" value="Embalagem de agrotóxicos">
+                                <label for="agro">Embalagem de agrotóxicos</label>
+                            </div>
+                        </div>
+                    </div>
 
-                    </fieldset>
+                </fieldset>
 
-                    <h4>Como se trata de um banco de dados povoado por pessoas, podemos entrar em contato para
-                        confirmar a existência do ponto.</h4>
+                <h4>Como se trata de um banco de dados povoado por pessoas, podemos entrar em contato para
+                    confirmar a existência do ponto.</h4>
 
-                    <button type="submit" class="button-points" id="submitBtn">Cadastrar
-                        ponto de
-                        coleta</button>
-                </form>
-            </div>
+                <button type="submit" class="button-points" id="submitBtn">Cadastrar
+                    ponto de
+                    coleta</button>
+            </form>
         </div>
-    </main>
+    </div>
+{% endblock content %}
 
+{% block modal %}
     <div class="modal-overlay">
         <div class="modal-content">
         </div>
     </div>
+{% endblock modal %}
 
+{% block script %}
     <script src="/scripts/registerScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-</body>
-
-</html>
+{% endblock script %}

@@ -1,58 +1,43 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
+{% block title %}
     <title>DescartEco | Quem somos</title>
-    <meta name="description"
-        content="Ajudamos nossos usuários a encontrar pontos de coleta adequados para resíduos que merecem tratamento especial no seu descarte.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Assets/img/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/reset.css">
+{% endblock title %}
+
+{% block style %}
     <link rel="stylesheet" href="/styles/styleAboutUs.css">
-</head>
+{% endblock style %}
 
-<body>
-
+{% block header %}
     {% include "partials/header.html" %}
+{% endblock header %}
 
-    <main class="container">
-        <div class="main-container">
-            <section class="wrapper">
-                <h2>Quem somos</h2>
-                <p>O Projeto Escola Verde é um movimento de ensino que visa de forma colaborativa com escolas e
-                    comunidade no
-                    geral, o enfrentamento os problemas socioambientais.</p>
-                <p>O tema da Educação Ambiental pode ser trabalhado e vivenciado de diferentes formas no ambiente
-                    escolar, mas a
-                    não inclusão desse importante componente curricular, bem como a limitação dos professores devido a
-                    falta de
-                    apoio ou poucos materiais didáticos, dificulta a progagação desse importante tema.</p>
-                <p>O Projeto Escola Verde surge como auxílio para os profissionais da educação bem como para a
-                    comunidade no
-                    geral, desenvolvendo atividades de pesqusa e extenção que buscam minimizar os efeitos das
-                    dificuldades de
-                    ensino sobre o tema. Com o Ensino Verde é possível ver informações atuais, lúdicas e relevantes para
-                    que
-                    todos obtenham acesso sobre conteúdos do meio ambiente e busquem meios de ajudar e compartilhar com
-                    outros.
-                </p>
-                <div class="images">
-                    <img src="Assets/img/PEV-aprovado-pelo-MEC.png" alt="">
-                    <img src="Assets/img/PEV-aprovado-pelo-MEC.png" alt="">
-                    <img src="Assets/img/PEV-aprovado-pelo-MEC.png" alt="">
-                </div>
-            </section>
-        </div>
-    </main>
-
-</body>
-
-</html>
+{% block content %}
+    <div class="main-container">
+        <section class="wrapper">
+            <h2>Quem somos</h2>
+            <p>O Projeto Escola Verde é um movimento de ensino que visa de forma colaborativa com escolas e
+                comunidade no
+                geral, o enfrentamento os problemas socioambientais.</p>
+            <p>O tema da Educação Ambiental pode ser trabalhado e vivenciado de diferentes formas no ambiente
+                escolar, mas a
+                não inclusão desse importante componente curricular, bem como a limitação dos professores devido a
+                falta de
+                apoio ou poucos materiais didáticos, dificulta a progagação desse importante tema.</p>
+            <p>O Projeto Escola Verde surge como auxílio para os profissionais da educação bem como para a
+                comunidade no
+                geral, desenvolvendo atividades de pesqusa e extenção que buscam minimizar os efeitos das
+                dificuldades de
+                ensino sobre o tema. Com o Ensino Verde é possível ver informações atuais, lúdicas e relevantes para
+                que
+                todos obtenham acesso sobre conteúdos do meio ambiente e busquem meios de ajudar e compartilhar com
+                outros.
+            </p>
+            <div class="images">
+                <img src="Assets/img/PEV-aprovado-pelo-MEC.png" alt="">
+                <img src="Assets/img/PEV-aprovado-pelo-MEC.png" alt="">
+                <img src="Assets/img/PEV-aprovado-pelo-MEC.png" alt="">
+            </div>
+        </section>
+    </div>
+{% endblock content %}

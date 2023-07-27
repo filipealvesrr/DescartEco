@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     {# title #}
-    <title>DescartEco</title>
+    {% block title %}
+        <title>DescartEco</title>
+    {% endblock title %}
+     
     <meta name="description"
         content="Ajudamos nossos usuários a encontrar pontos de coleta adequados para resíduos que merecem tratamento especial no seu descarte.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +20,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/styles/reset.css">
-    {# style css #}
+    {% block style %}
+    {% endblock style %}
 </head>
 
 <body>
-
+    {% block header %}
+    {% endblock header %}
+    
     <main class="container">
-
+        {% block content %}
+        {% endblock content %}
     </main>
+
+    {% block modal %}
+    {% endblock modal %}
+
+    {% block script %}
+    {% endblock script %}
 
 </body>
 

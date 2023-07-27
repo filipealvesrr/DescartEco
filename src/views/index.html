@@ -1,81 +1,65 @@
 {% extends "base.html" %}
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
+    
+{% block title %}
     <title>DescartEco</title>
-    <meta name="description"
-        content="Ajudamos nossos usuários a encontrar pontos de coleta adequados para resíduos que merecem tratamento especial no seu descarte.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Assets/img/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/reset.css">
+{% endblock title %}
+    
+{% block style %}
     <link rel="stylesheet" href="/styles/styleIndex.css">
-</head>
+{% endblock style %}
 
-<body>
+{% block header %}
     <header class="header container">
-        <div class="header-container">
-            <div class="logo">
-                <a href="/">
-                    <img src="Assets/img/ir-verde.png" alt="Logo DescartEco" title="Logo DescartEco">
-                    <h1>DescartEco</h1>
+    <div class="header-container">
+        <div class="logo">
+            <a href="/">
+                <img src="Assets/img/ir-verde.png" alt="Logo DescartEco" title="Logo DescartEco">
+                <h1>DescartEco</h1>
+            </a>
+        </div>
+        <nav>
+            <div class="register">
+                <a href="/register">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <h3>Cadastrar ponto no Vale</h3>
                 </a>
             </div>
-            <nav>
-                <div class="register">
-                    <a href="/register">
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                        <h3>Cadastrar ponto no Vale</h3>
-                    </a>
-                </div>
-            </nav>
-        </div>
+        </nav>
+    </div>
     </header>
+{% endblock header %}
 
-    <main class="container">
-        <div class="main-container">
-            <div class="wrapper">
-                <section class="banner-info">
-                    <div class="title-main">
-                        <h2>Auxílio no descarte e coleta adequados.</h2>
-                    </div>
-                    <div class="description">
-                        <p>Banco de dados público com pontos de coleta no Vale de São Francisco.</p>
-                    </div>
-                    <h2 class="title-button">Pontos de Coleta</h2>
-                    <div class="button">
-                        <form action="collectionPoints.html" method="GET">
-                            <button type="submit" value="Petrolina">Petrolina</button>
-                            <button type="submit" value="Juazeiro">Juazeiro</button>
-                        </form>
-                    </div>
-                </section>
-                <section class="banner-image">
-                    <img src="Assets/img/capa-remove.png" alt="">
-                </section>
-            </div>
-
-            <footer class="footer-content">
-                <a href="/about-us" class="about">
-                    <img src="Assets/img/pev-remove.png" alt="">
-                    <h3>Quem somos</h3>
-                </a>
-                <a href="/know-more" class="about">
-                    <h3>Saiba Mais</h3>
-                </a>
-            </footer>
+{% block content %}
+    <div class="main-container">
+        <div class="wrapper">
+            <section class="banner-info">
+                <div class="title-main">
+                    <h2>Auxílio no descarte e coleta adequados.</h2>
+                </div>
+                <div class="description">
+                    <p>Banco de dados público com pontos de coleta no Vale de São Francisco.</p>
+                </div>
+                <h2 class="title-button">Pontos de Coleta</h2>
+                <div class="button">
+                    <form action="collectionPoints.html" method="GET">
+                        <button type="submit" value="Petrolina">Petrolina</button>
+                        <button type="submit" value="Juazeiro">Juazeiro</button>
+                    </form>
+                </div>
+            </section>
+            <section class="banner-image">
+                <img src="Assets/img/capa-remove.png" alt="">
+            </section>
         </div>
-    </main>
 
-</body>
-
-</html>
+        <footer class="footer-content">
+            <a href="/about-us" class="about">
+                <img src="Assets/img/pev-remove.png" alt="">
+                <h3>Quem somos</h3>
+            </a>
+            <a href="/know-more" class="about">
+                <h3>Saiba Mais</h3>
+            </a>
+        </footer>
+    </div>
+{% endblock content %}
