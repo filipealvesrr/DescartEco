@@ -30,7 +30,7 @@ descartEco.get("/", (req, res) => {
 });
 
 descartEco.get("/register", (req, res) => {
-    return res.render("register.html", { success: true});
+    return res.render("register.html");
 });
 
 descartEco.post("/success", (req, res) => {
