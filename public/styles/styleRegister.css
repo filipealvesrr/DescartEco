@@ -124,6 +124,13 @@ legend h2{
     margin-left: 8px;
 }
 
+#error-message {
+    color: #FF0000;
+    display: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
 form h4 {
   margin-top: 20px;
   color: #322153;
@@ -138,6 +145,10 @@ form h4 {
     border-radius: 8px;
     margin-top: 40px;
     cursor: pointer;
+}
+
+.button-points:hover {
+    opacity: 0.9;
 }
 
 /* === MODAL === */
@@ -185,11 +196,6 @@ form h4 {
     margin-top: 16px;
 
 }
-
-/* .modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-} */
 
 /* RESPONSIVIDADE */
 

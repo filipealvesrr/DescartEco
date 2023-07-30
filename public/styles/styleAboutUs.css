@@ -58,12 +58,18 @@
 
 .wrapper .images {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: left;
 }
 
 .images img {
-    width: 140px;
-    height: 110px;
+    width: 80px;
+}
+
+.images i {
+    font-size: 40px;
+    margin-right: 12px;
+    color: #0C540B;
 }
 
 /* Responsividade */

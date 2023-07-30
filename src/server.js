@@ -53,7 +53,7 @@ descartEco.post("/success", (req, res) => {
     
     newPoint.add(pointData).then((doc) => {
         console.log('Documento adicionado com ID:', doc.id);
-        return res.render("/success", { success: true})
+        return res.render("register.html", { success: true})
     }).catch((err) => {
         console.error('Erro ao adicionar documento:', err);
     });

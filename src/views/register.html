@@ -6,7 +6,6 @@
     
 {% block style %}
     <link rel="stylesheet" href="/styles/styleRegister.css">
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.min.css" rel="stylesheet">
 {% endblock style %}
 
 {% block header %}
@@ -18,7 +17,7 @@
         <div class="wrapper">
             <h1>Formulário de cadastro</h1>
             <p>Preencha corretamente o endereço, ajudando outros e a natureza</p>
-            <form action="/success" method="POST" id="myForm">
+            <form action="/success" method="POST" id="myForm" onsubmit="return validateForm()">
                 <fieldset>
                     <legend>
                         <h2>Dados do ponto de coleta</h2>
@@ -104,6 +103,8 @@
 
                 </fieldset>
 
+                <div id="error-message">Selecione pelo menos uma opção antes de enviar o formulário!</div>
+
                 <h4>Como se trata de um banco de dados povoado por pessoas, podemos entrar em contato para
                     confirmar a existência do ponto.</h4>
 
@@ -113,15 +114,13 @@
             </form>
         </div>
     </div>
+
+    {% if success %}
+        {% include "partials/success-register.html" %}
+    {% endif %}
 {% endblock content %}
 
-{% if success %}
-    {% block modal %}
-        {% include "partials/success-register.html" %}
-    {% endblock modal %}
-{% endif %}
 
 {% block script %}
     <script src="/scripts/registerScript.js"></script>
-    {# <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> #}
 {% endblock script %}
