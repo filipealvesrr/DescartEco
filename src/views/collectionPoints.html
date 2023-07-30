@@ -14,141 +14,36 @@
 
 {% block content %}
     <div class="main-container">
-        <h2>Pontos cadastrados</h2>
+        <h2>Pontos cadastrados em {{ city }}</h2>
         <section class="cards">
-            <div class="card">
-                <div class="content">
-                    <div class="title-card">
-                        <h4 class="title-case">NOME DO LOCAL</h4>
-                        <p class="info">Colectoria</p>
+            {% for point in points %}
+                <div class="card">
+                    <div class="content">
+                        <div class="title-card">
+                            <h4 class="title-case">NOME DO LOCAL</h4>
+                            <p class="info">{{ point.name }}</p>
+                        </div>
+                        <a href="" target="_blank" class="link-button">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </a>
                     </div>
-                    <a href="" class="link-button">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
-                </div>
-                <div class="text">
-                    <h4 class="title-case">RESÍDUOS ACEITOS</h4>
-                    <p class="info">Resíduos Eletrônicos, Lâmpadas</p>
-                </div>
-
-                <div class="description">
-                    <h4 class="title-case">ENDEREÇO</h4>
-                    <p class="info">Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</p>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="content">
-                    <div class="title-card">
-                        <h4 class="title-case">NOME DO LOCAL</h4>
-                        <p class="info">Colectoria</p>
+                    <div class="text">
+                        <h4 class="title-case">RESÍDUOS ACEITOS</h4>
+                        <p class="info">{{ point.itens }}</p>
                     </div>
-                    <a href="" class="link-button">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
-                </div>
-                <div class="text">
-                    <h4 class="title-case">RESÍDUOS ACEITOS</h4>
-                    <p class="info">Resíduos Eletrônicos, Lâmpadas</p>
-                </div>
 
-                <div class="description">
-                    <h4 class="title-case">ENDEREÇO</h4>
-                    <p class="info">Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</p>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="content">
-                    <div class="title-card">
-                        <h4 class="title-case">NOME DO LOCAL</h4>
-                        <p class="info">Colectoria</p>
+                    <div class="description">
+                        <h4 class="title-case">ENDEREÇO</h4>
+                        <p class="info">{{ point.address}}. {{point.complement}}</p>
                     </div>
-                    <a href="" class="link-button">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
-                </div>
-                <div class="text">
-                    <h4 class="title-case">RESÍDUOS ACEITOS</h4>
-                    <p class="info">Resíduos Eletrônicos, Lâmpadas</p>
-                </div>
 
-                <div class="description">
-                    <h4 class="title-case">ENDEREÇO</h4>
-                    <p class="info">Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</p>
                 </div>
-
-            </div>
-            <div class="card">
-                <div class="content">
-                    <div class="title-card">
-                        <h4 class="title-case">NOME DO LOCAL</h4>
-                        <p class="info">Colectoria</p>
-                    </div>
-                    <a href="" class="link-button">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
-                </div>
-                <div class="text">
-                    <h4 class="title-case">RESÍDUOS ACEITOS</h4>
-                    <p class="info">Resíduos Eletrônicos, Lâmpadas</p>
-                </div>
-
-                <div class="description">
-                    <h4 class="title-case">ENDEREÇO</h4>
-                    <p class="info">Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</p>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="content">
-                    <div class="title-card">
-                        <h4 class="title-case">NOME DO LOCAL</h4>
-                        <p class="info">Colectoria</p>
-                    </div>
-                    <a href="" class="link-button">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
-                </div>
-                <div class="text">
-                    <h4 class="title-case">RESÍDUOS ACEITOS</h4>
-                    <p class="info">Resíduos Eletrônicos, Lâmpadas</p>
-                </div>
-
-                <div class="description">
-                    <h4 class="title-case">ENDEREÇO</h4>
-                    <p class="info">Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</p>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="content">
-                    <div class="title-card">
-                        <h4 class="title-case">NOME DO LOCAL</h4>
-                        <p class="info">Colectoria</p>
-                    </div>
-                    <a href="" class="link-button">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
-                </div>
-                <div class="text">
-                    <h4 class="title-case">RESÍDUOS ACEITOS</h4>
-                    <p class="info">Resíduos Eletrônicos, Lâmpadas</p>
-                </div>
-
-                <div class="description">
-                    <h4 class="title-case">ENDEREÇO</h4>
-                    <p class="info">Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</p>
-                </div>
-
-            </div>
-
+            {% endfor %}
         </section>
 
         <footer class="footer-info">
-            <h4>Não encontrou o ponto de coleta? Informe nos contatos abaixo: </h4>
-            <a class="links" href="tel:+5587981052994">Telefone: +55 87 98105 2994</a>
-            <a class="links" href="mailto:escolaverde@univasf.edu.br">E-mail:escolaverde@univasf.edu.br</a>
+            <h4>Não encontrou o ponto de coleta? Informe no contatos abaixo: </h4>
+            <a class="links" href="mailto:descartecopev@gmail.com">E-mail: descartecopev@gmail.com</a>
         </footer>
     </div>
 {% endblock content %}

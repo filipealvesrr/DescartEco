@@ -148,9 +148,8 @@ form h4 {
     height: 100%;
     position: fixed;
     top: 0;
-    opacity: 0;
-    visibility: hidden;
-
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .modal-content {
@@ -161,10 +160,36 @@ form h4 {
     height: 100vh;
 }
 
-.modal-overlay.active {
+.fa-check {
+    position: relative;
+    z-index: 1; 
+    transition: all 1s ease-in-out; 
+}
+
+.modal-overlay i {
+    font-size: 45px;
+    color: #FFF;
+    padding: 10px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+}
+
+.modal-overlay:hover i {
+    color: #4996FF;
+    border-color: #4996FF;
+}
+
+.modal-overlay h4 {
+    color: #FFF;
+    font-size: 32px;
+    margin-top: 16px;
+
+}
+
+/* .modal-overlay.active {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 /* RESPONSIVIDADE */
 

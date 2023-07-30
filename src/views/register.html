@@ -18,7 +18,7 @@
         <div class="wrapper">
             <h1>Formulário de cadastro</h1>
             <p>Preencha corretamente o endereço, ajudando outros e a natureza</p>
-            <form action="index.html" method="GET" id="myForm">
+            <form action="/success" method="POST" id="myForm">
                 <fieldset>
                     <legend>
                         <h2>Dados do ponto de coleta</h2>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="field">
                             <label for="whats">Whatsapp (99) 99999-9999</label>
-                            <input type="tel" name="whatsapp" id="whats" required>
+                            <input type="tel" name="whats" id="whats" required>
                         </div>
                     </div>
                 </fieldset>
@@ -115,14 +115,13 @@
     </div>
 {% endblock content %}
 
-{% block modal %}
-    <div class="modal-overlay">
-        <div class="modal-content">
-        </div>
-    </div>
-{% endblock modal %}
+{% if success %}
+    {% block modal %}
+        {% include "partials/success-register.html" %}
+    {% endblock modal %}
+{% endif %}
 
 {% block script %}
     <script src="/scripts/registerScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {# <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> #}
 {% endblock script %}
