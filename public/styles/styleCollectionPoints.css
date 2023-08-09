@@ -88,6 +88,10 @@
     gap: 8px;
 }
 
+.footer-info a:hover {
+    color: #542ca3;
+}
+
 /* Responsividade */
 
 @media (max-width:992px){
